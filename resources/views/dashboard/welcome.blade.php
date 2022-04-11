@@ -124,7 +124,7 @@
 
 @section ('scripts')
 
-    <script>
+    {{-- <script>
         //line chart
         var line = new Morris.Line({
             element: 'line-chart1',
@@ -148,6 +148,6 @@
             gridTextFamily: 'Open Sans',
             gridTextSize: 10
         });
-    </script> 
+    </script>  --}}
 
 @endsection
