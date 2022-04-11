@@ -18,6 +18,7 @@ class ProductesTableSeeder extends Seeder
 
         foreach($productes as $product){
             Product::create([
+                'num_produitt' => 'C0001',
                 'name'          =>  $product,
                 'category_id'   =>  1,
                 'purches_price' =>  30,
