@@ -50,17 +50,10 @@ class ClientOrderController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request,Client $client, status $status)
+    public function store(Request $request,Client $client)
     {
 
-
-
-         
-         $this->attach_order($request , $client , $status);
-
-         
-
-        
+         $this->attach_order($request , $client);
          session()->flash('success', __('site.add_successfully'));
         return redirect()->back();
        
