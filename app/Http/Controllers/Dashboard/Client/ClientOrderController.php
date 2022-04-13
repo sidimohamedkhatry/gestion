@@ -125,7 +125,7 @@ class ClientOrderController extends Controller
     }
 
     private function attach_order($request, $client){
-        $order  =   $client->orders()->create(["num_fa"]);
+        $order  =   $client->orders()->create([]);
         $order->products()->attach($request->products);
         $total_price    = 0;
         $num_fa ;

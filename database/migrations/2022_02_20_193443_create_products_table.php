@@ -21,7 +21,7 @@ class CreateProductsTable extends Migration
             $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->string('image')->default('defualt.png');
             $table->float('purches_price', 8, 2);
-            $table->float('sale_price', 8, 2);
+            $table->float('sale_price', 8, 2)->nullable();
             $table->integer('stock');
             $table->timestamps();
         });
