@@ -128,8 +128,8 @@ class ClientOrderController extends Controller
         $order  =   $client->orders()->create([]);
         $order->products()->attach($request->products);
         $total_price    = 0;
-        $num_fa ;
-        $status ; 
+        // $num_fa ;
+        // $status ; 
       
         
         
@@ -137,8 +137,8 @@ class ClientOrderController extends Controller
             foreach($request->products as $id=>$quantity){
                 $product    = Product::where('id',$id)->first();
                 $total_price    +=  $product->purches_price * $quantity['quantity'];
-                $num_fa =    $request->num_fa;
-                $status = $request->status;
+                // $num_fa =    $request->num_fa;
+                // $status = $request->status;
 
                 $product->update([
                     'stock' =>  $product->stock - $quantity['quantity'],
@@ -147,8 +147,8 @@ class ClientOrderController extends Controller
             }
         $order->update([
             'total_price'   =>   $total_price,
-             'num_fa'  => $num_fa,
-             'status'   => $status
+            //  'num_fa'  => $num_fa,
+            //  'status'   => $status
              
              
              
