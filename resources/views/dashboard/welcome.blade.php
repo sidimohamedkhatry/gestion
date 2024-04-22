@@ -58,7 +58,7 @@
                     <div class="small-box bg-red">
                         <div class="inner">
                             <h3>
-                             {{number_format(\App\Models\Order::sum('total_price'), 2)}} MRU                            
+                                {{ number_format(\App\Models\Order::sum('total_price'), 2) }} MRU
                             </h3>
 
                             <p>@lang('site.To')</p>
@@ -87,19 +87,70 @@
                     </div>
                 </div>
 
+
+                {{-- clients --}}
+                <div class="col-lg-3 col-xs-6">
+                    <div class="small-box bg-blue">
+                        <div class="inner">
+                            <h3>
+                                {{ number_format(\App\Models\employe::sum('salaire'), 2) }} MRU
+                            </h3>
+
+                            <p>@lang('site.salaire')</p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion  ion-cash "></i>
+                        </div>
+                        <a href="{{ route('dashboard.employe.index') }}" class="small-box-footer">@lang('site.read') <i
+                                class="fa fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-xs-6">
+                    <div class="small-box bg-orange">
+                        <div class="inner">
+                            <h3>
+                                {{ number_format(\App\Models\employe::sum('avance'), 2) }} MRU
+                            </h3>
+
+                            <p>@lang('site.avance')</p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion  ion-cash "></i>
+                        </div>
+                        <a href="{{ route('dashboard.employe.index') }}" class="small-box-footer">@lang('site.read') <i
+                                class="fa fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-xs-6">
+                    <div class="small-box bg-teal">
+                        <div class="inner">
+                            <h3>
+                                {{ number_format(\App\Models\employe::sum('reste'), 2) }} MRU
+                            </h3>
+
+                            <p>@lang('site.reste')</p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion  ion-cash "></i>
+                        </div>
+                        <a href="{{ route('dashboard.employe.index') }}" class="small-box-footer">@lang('site.read') <i
+                                class="fa fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+
             </div><!-- end of row -->
-          
-            
+
+
 
             <div class="box box-solid">
-               
-                <div class="box-header">
-                    <h3 class="box-title">Sales Graph</h3>
-                </div>
-                <div class="box-body border-radius-none">
-                    <div class="chart" id="line-chart1" style="height: 250px;"></div>
-                </div>
+
+
             </div>
+
+
 
 
 
@@ -118,13 +169,10 @@
 
         </section><!-- end of content -->
     </div><!-- end of content wrapper -->
-
-    
 @endsection
 
-@section ('scripts')
-
-    {{-- <script>
+@section('scripts')
+    {{--<script>
         //line chart
         var line = new Morris.Line({
             element: 'line-chart1',
@@ -148,6 +196,5 @@
             gridTextFamily: 'Open Sans',
             gridTextSize: 10
         });
-    </script>  --}}
-
+    </script> --}}
 @endsection

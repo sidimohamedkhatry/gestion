@@ -79,6 +79,13 @@
                                     class="img-thumbnail image-preview" alt="">
                             </div>
 
+                                          <div class="form-group">
+                                                <label class="col-md-2 control-label">Objet de Dépense</label>
+                                                <div class="col-md-10">
+                                                    <textarea class="form-control" name="status" rows="5"></textarea>
+                                                </div>
+                                            </div>
+
                              {{-- <div class="form-group col-md-3">
                                 <label>@lang('site.image')</label>
                                 <input  type="file" name="image" class="form-control image">

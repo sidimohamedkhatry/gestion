@@ -117,7 +117,10 @@ return [
 
      'Employe' => 'Employe',
      'add_employe' => 'Ajouter Employe',
-     'edit_epmloye' => 'Modifier Employe'
+     'edit_epmloye' => 'Modifier Employe',
+
+     'employe' => 'Employe',
+     'invoices'=> 'Commande',
 
 
 

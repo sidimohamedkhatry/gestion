@@ -116,17 +116,17 @@
                            <!-- Form Facture-->
                             <form action="{{ route('dashboard.clients.orders.store', $client->id) }}" method="post">
                                @csrf
-                               {{-- <div class="form-group col-md-6" >
+                               <div class="form-group col-md-6" >
                                 <label>@lang('site.categories')</label>
                                 <select name="status" id="" class="form-control " required>
                                     <option value="No Payé" selected >No Payé</option> 
                                     <option value="Payé" selected >Payé</option> 
                                 </select>
-                            </div> --}}
-                               {{-- <div class="form-group col-md-6">
+                            </div>
+                               <div class="form-group col-md-6">
                                  <label>N_Facture:</label>
                                 <input type="text" name="num_fa" id="num_fa" >
-                                </div> --}}
+                                </div>
                                 @include('partials._errors')
                                 <table class="table table-hover">
                                    

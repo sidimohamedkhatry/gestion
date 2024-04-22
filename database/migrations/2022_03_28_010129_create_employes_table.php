@@ -22,6 +22,7 @@ class CreateEmployesTable extends Migration
             $table->integer('avance');
             $table->integer('reste');
             $table->string('image')->default('defualt.png');
+            $table->string('status');
             $table->timestamps();
         });
     }

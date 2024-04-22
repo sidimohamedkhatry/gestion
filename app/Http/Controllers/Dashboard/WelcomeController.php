@@ -8,6 +8,7 @@ use App\Models\Client;
 use App\Models\Order;
 use App\Models\Product;
 use App\Models\User;
+use App\Models\employe;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -18,6 +19,8 @@ class WelcomeController extends Controller
         $order_count = Order::count();
         $products_count = Product::count();
         $clients_count = Client::count();
+        $employe_count =  employe::count();
+        
         $users_count = User::whereRoleIs('admin')->count();
 
         // $sales_data = Order::select(
@@ -26,7 +29,9 @@ class WelcomeController extends Controller
         //     DB::raw('SUM(total_price) as sum')
         // )->groupBy('month')->get();
 
-        return view('dashboard.welcome', compact('categories_count',  'products_count', 'clients_count', 'order_count', 'users_count'));
+        $users = User::all();
+
+        return view('dashboard.welcome', compact('categories_count', 'users',  'products_count', 'clients_count', 'order_count', 'users_count'));
 
     }//end of index
 

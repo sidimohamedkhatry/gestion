@@ -8,7 +8,7 @@
             <h6>@lang('site.user') : <span>{{ Auth::user()->first_name }} {{ Auth::user()->last_name }} </span></h6>
         </div>
         <div class="col-sm-6">
-            <h6>@lang('site.prand') : Mjk Traiter </span></h6>
+            <h6>@lang('site.prand') : جمال الورد </span></h6>
             <h6 style="text-align:right">@lang('site.prand1') : {{ $order->client->name }} </span></h6>
         </div>
     </div>

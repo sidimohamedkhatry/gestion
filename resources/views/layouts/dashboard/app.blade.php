@@ -147,6 +147,7 @@
                                                 <div class="pull-left">
                                                     <img src="{{ asset('dashboard_files/img/user2-160x160.jpg') }}"
                                                         class="img-circle" alt="User Image">
+                                                        
                                                 </div>
                                                 <h4>
                                                     Support Team

@@ -3,7 +3,7 @@
         <div class="col-sm-6">
             <h6 style="text-align:Left">@lang('site.num_fa') : {{ $order->num_fa }} </span></h6>
 
-
+          جمال الورد
             <h6 style="text-align:right; font-size:12px">@lang('site.prand2') :<td>
                     {{ $order->created_at->toFormattedDateString() }}</td> </span></h6>
             <h6>@lang('site.user') : <span>{{ Auth::user()->first_name }} {{ Auth::user()->last_name }} </span></h6>

@@ -74,6 +74,13 @@
                             </div>
                         </div>
 
+                        <div class="form-group">
+                                                <label class="col-md-2 control-label">Objet de Dépense</label>
+                                                <div class="col-md-10">
+                                                    <textarea class="form-control" name="status" rows="5" value="">{{ $employe->status}}</textarea>
+                                                </div>
+                                            </div>
+                        
 
 
 

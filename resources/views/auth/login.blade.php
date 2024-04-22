@@ -52,11 +52,15 @@
             <form class="form-group " action="{{ route('login') }}" method="post">
                 @csrf
                 <p style="text-align:center; font-size:18px; color:#367fa9">GESTION FACTURE MJK TRAITER</p>
-                @include('partials._errors')
 
                 <div class="form-group has-feedback ">
                     <input type="email" name="email" class="form-control" placeholder="@lang('site.email')">
                     <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                    @error('email')
+                                                    <span class="invalid-feedback" role="alert">
+                                                     <strong>{{ $message }}</strong>
+                                                     </span>
+                                                    @enderror
                 </div>
 
                 <div class="form-group has-feedback">

@@ -10,7 +10,6 @@ return [
             'orders' => 'c,r,u,d',
             'sidi' => 'c,r,u,d',
             'invoices' => 'c,r,u,d',
-
             'coma' => 'c,r,u,d',
             'employe' => 'c,r,u,d',
         

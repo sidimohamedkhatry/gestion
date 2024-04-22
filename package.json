@@ -1,4 +1,6 @@
 {
+    "name": "gestion-stock",
+    "version": "",
     "private": true,
     "scripts": {
         "dev": "npm run development",
@@ -7,7 +9,8 @@
         "watch-poll": "mix watch -- --watch-options-poll=1000",
         "hot": "mix watch --hot",
         "prod": "npm run production",
-        "production": "mix --production"
+        "production": "mix --production",
+        "start": "node server.js"
     },
     "devDependencies": {
         "@popperjs/core": "^2.10.2",
@@ -24,6 +27,7 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
-        "chart.js": "^3.7.1"
+        "chart.js": "^3.7.1",
+        "express": "^4.19.2"
     }
 }
